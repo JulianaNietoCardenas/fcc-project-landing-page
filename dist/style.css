@@ -1,0 +1,223 @@
+#main {
+  margin: auto;
+  padding:20px;
+  font-family: 'PT Sans', sans-serif;
+  display: grid;
+  grid-template-rows:  0.3fr 0.5fr 1fr 1fr 1fr 0.1fr; 
+  grid-template-areas: "start-header"
+                       "form-part"     
+                       "middle-features"
+                       "middle-video"
+                       "prices" 
+                       "autor" ;
+  
+}
+
+
+/* header styles */
+
+header{
+  
+
+  width:100%;              
+  
+  
+  
+  
+  
+}
+
+#header{
+  grid-area:start-header;
+  background-color: #80ffd4;
+  position: fixed;
+  top:0px;
+  left:0px;
+  
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1.5fr;
+}
+
+#main-title-logo{
+  grid-column: 1/2; 
+  justify-self: center;
+}
+
+#header-img{
+  width: 80px;
+  grid-column: 2/3; 
+  
+  
+  
+}
+
+#nav-bar{
+  grid-column: 3/4; 
+  
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+li{
+  list-style: none;
+  display: inline;
+  margin: 30px;
+  padding: 10px 0px 10px 0px;
+}
+
+
+li a{
+  text-decoration: none;
+  color: black;
+  display: inline;
+  transition: 0.3s;
+  padding: 15px;
+}
+
+li a:hover{
+  background-color: #5cbc9c;
+  border-radius: 20px;
+}
+
+.nav-link {
+  
+}
+
+/*END header styles*/
+label{
+  display: block;
+  font-size: 25px;
+  margin: 10px;
+  text-style: bold;
+}
+
+
+#input-part{
+  grid-area:form-part;
+  text-align: center;
+  padding: 70px 20px;
+  height: 200px;
+  
+}
+
+input[type="email"]{
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  font-size: 15px;
+ 
+}
+
+#submit{
+  background-color: #00ff99;
+  border:solid;
+  border-color:#00ff99;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+/*END  Email Form*/
+
+
+/*START Features*/
+#features {
+  grid-area: middle-features;
+  font-size: 20px;
+  text-align: center;
+ 
+  
+}
+
+.icon{
+  color: #00994d;
+  font-size: 35px;
+}
+
+
+/*Video*/
+#how-it-works{
+  grid-area: middle-video;
+  text-align: center;
+}
+@media only screen and (max-width: 768px){
+  #video-p{
+    width: 100%;
+  }  
+}
+
+
+#video-p{
+  
+  
+}
+    
+
+/*START Pricing*/
+#pricing{
+  grid-area: prices;
+  
+  
+}
+
+#pricing{
+  
+  padding: 1px 80px;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-gap:30px;
+  text-align: center;
+  
+}
+
+#price1{
+  border: solid;
+  border-color: #00cc7a;
+  border-radius: 10px;
+  padding: 10px 20px;
+  grid-column: 2/3;
+ 
+}
+
+#price2{
+  border: solid;
+  border-color: #00cc7a;
+  border-radius: 10px;
+  padding: 10px 20px;
+  grid-column: 3/4;
+  
+}
+
+#price3{
+  border: solid;
+  border-color: #00cc7a;
+   border-radius: 10px;
+  padding: 10px 20px;
+  grid-column: 4/5;
+  
+}
+
+.buy{
+  font-size: 20px;
+  padding: 8px 30px;
+  border-radius: 10px;
+  border:none;
+  background-color:#00cc7a;
+  color: #FFF;
+  transition: 0.3s;
+}
+
+.buy:hover{
+  background-color: #00e68a;
+  padding: 8px 50px;
+  font-size: 25px;
+}
+
+/*FINAL PART - author*/
+
+#author{
+  grid-area:autor;
+  text-align: center;
+}
